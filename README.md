@@ -38,16 +38,21 @@ pip install yfinance numpy pandas matplotlib scikit-learn tensorflow
 The stock data is fetched from Yahoo Finance using the yfinance library. The data includes features such as the adjusted closing price, which is used for model training and evaluation.
 
 # Volatility Calculation
+Volatility is a measure of the risk or variability in the stock's returns. It is calculated using the following formula:
 
-Volatility is a measure of the risk or variability in the stock's returns. It is calculated using the formula:
-
-\[ \text{Volatility} = \text{Standard Deviation of Log Returns} \times \sqrt{252} \]
+$$
+\text{Volatility} = \text{Standard Deviation of Log Returns} \times \sqrt{252}
+$$
 
 where:
-- **Log Returns** is computed as:
-\[ \text{Log Returns} = \log \left( \frac{\text{Price}_t}{\text{Price}_{t-1}} \right) \]
+- **Log Returns** is calculated as:
+$$
+\text{Log Returns} = \log \left( \frac{\text{Price}_t}{\text{Price}_{t-1}} \right)
+$$
+
 - **252** is used to annualize the volatility, assuming 252 trading days in a year.
 This formula provides an estimate of the stock's volatility over a year based on its daily log returns.
+
 
 ## Data Preparation
 1. **Normalization**: Stock price data is normalized using MinMaxScaler to scale features to the range [0, 1]. This is essential for the LSTM model to perform well.
