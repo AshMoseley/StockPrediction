@@ -2,6 +2,9 @@
 
 This project utilizes Long Short-Term Memory (LSTM) networks to predict stock prices based on historical data. The project includes multiple Jupyter notebooks that explore different configurations and features for improving the model's performance.
 
+## Related Repositories
+- This project is **meant** to be used along the [Web App repository](https://github.com/AshMoseley/Stock-Prediction-App). - This repository contains the web application that interacts with and visualizes the results from the LSTM models.
+
 ## Files
 
 1. **LSTM_Model_Long_MoreFeatures.ipynb**  
@@ -92,3 +95,4 @@ Model performance is evaluated using several metrics:
 - Root Mean Squared Error (RMSE)
 - Mean Absolute Error (MAE)
 - R-squared (R²)
+
