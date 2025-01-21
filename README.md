@@ -1,6 +1,6 @@
 # Stock Price Prediction with LSTM
 
-This project utilizes Long Short-Term Memory (LSTM) networks to predict stock prices based on historical data. The project includes multiple Jupyter notebooks that explore different configurations and features for improving the model's performance.
+This project utilises Long Short-Term Memory (LSTM) networks to predict stock prices based on historical data. The project includes multiple Jupyter notebooks that explore different configurations and features for improving the model's performance.
 
 ## Related Repositories
 - This project is **meant** to be used along the [Web App repository](https://github.com/AshMoseley/Stock-Prediction-App). - This repository contains the web application that interacts with and visualises the results from the LSTM models.
@@ -58,8 +58,8 @@ This formula provides an estimate of the stock's volatility over a year based on
 
 
 ## Data Preparation
-1. **Normalization**: Stock price data is normalized using MinMaxScaler to scale features to the range [0, 1]. This is essential for the LSTM model to perform well.
-2. **Sequence Creation**: The normalized data is transformed into sequences suitable for LSTM input. Each sequence consists of a fixed number of time steps, with the corresponding target being the next time step's price.
+1. **Normalisation**: Stock price data is normalised using MinMaxScaler to scale features to the range [0, 1]. This is essential for the LSTM model to perform well.
+2. **Sequence Creation**: The normalised data is transformed into sequences suitable for LSTM input. Each sequence consists of a fixed number of time steps, with the corresponding target being the next time step's price.
 ```python
 def create_sequences(data, seq_length):
     sequences = []
